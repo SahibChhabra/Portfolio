@@ -7,37 +7,55 @@ body{
     margin: 0;
     background: #0B0F19;
     color: white;
-    font-family: sans-serif;
+    font-family: "Lexend" , sans-serif;
 }
 .navbar{
     margin-top: 10px;
-    padding: 20px 50px;
-    
 }
 nav{
     display: flex;
     align-items:center;
     justify-content: space-between;
     width: 100%;
+    padding: 20px 80px;
 }
 nav ul{
       display: flex;
       gap: 30px;
       list-style: none;
       color: white;
+      margin-left: 25px;
       
 }
-a{
+nav a{
     text-decoration: none;
     color: white;
+    font-size: 22px;
+    transition: 0.03s ease;
+}
+
+li:hover a{
+       text-shadow: 0 0 2px #000000;
+       letter-spacing: 0.5px;
+       transition: 0.05s;
+
 }
 
 .logo{
+  
     font-size: 30px;
     font-weight: 700;
     color: white;
     cursor: pointer;
 }
-a{
-    font-size: 22px;
+
+.resume-button{
+    padding: 10px 22px;
+    text-decoration: none;
+    background: #4F6DFF;;
+    color: white;
+    border-radius: 10px;
+    border: none;
 }
+
+
