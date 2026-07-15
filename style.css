@@ -25,7 +25,6 @@ nav ul{
       list-style: none;
       color: white;
       margin-left: 25px;
-      
 }
 nav a{
     text-decoration: none;
@@ -38,7 +37,7 @@ li:hover a{
        text-shadow: 0 0 2px #000000;
        letter-spacing: 0.5px;
        transition: 0.05s;
-
+       color: rgb(104, 108, 110) ;
 }
 
 .logo{
@@ -52,10 +51,42 @@ li:hover a{
 .resume-button{
     padding: 10px 22px;
     text-decoration: none;
-    background: #4F6DFF;;
+    background: #4F6DFF;
     color: white;
     border-radius: 10px;
     border: none;
 }
-
+.resume-button:hover{
+    background-color: #3b4ca2; 
+    cursor: pointer;
+}
+.Hero-section{
+    min-height: calc(100vh - 90px);
+    border: 1px solid black;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    padding: 0 80px;
+    
+}
+.card1{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.code-card{
+    border-radius:10px;
+    width: 80%;
+    max-width: 450px;
+    height: 500px;
+    object-fit: contain;
+}
 
