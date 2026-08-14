@@ -253,12 +253,74 @@ border-color: transparent;
 }
 .education-card{
   padding: 0px 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.school-card{
+.school-card , .college-card{
     width: full;
   min-height: 150px;
-  border: 1px solid black;
-}
-.college.card{
+  border: 1px solid #252936;
+    border-radius: 15px;
 
+    box-sizing: border-box;
+}
+.textbox span{
+    
+        font-size: 17px;
+    color: #b8b8c0;
+}
+.college-card , .school-card{
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto;
+
+    padding: 30px 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    border: 1px solid #252936;
+    border-radius: 15px;
+
+    box-sizing: border-box;
+}
+.college-content h2{
+    color: #4F7CFF;
+     margin:  0 0 10px;
+}
+.college-content h3{
+    color: #fefeff;
+    margin: 0 0 6px;
+
+    font-size: 21px;
+    color: white;
+   
+}
+.course p{
+       margin: 0 0 6px;
+
+    font-size: 18px;
+    color: #b8b8c0;
+}
+.logo img{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    display: block;
+}
+.logo{
+    display: flex;
+    flex-shrink: 0;
+}
+.school-logo{   
+     display: flex;
+    flex-shrink: 0;
+}
+.school-logo img{
+     width: 165px;
+    height: 165px;
+    object-fit: contain;
+    display: block;
 }
