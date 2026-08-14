@@ -257,25 +257,21 @@ border-color: transparent;
   flex-direction: column;
   gap: 20px;
 }
-.school-card , .college-card{
-    width: full;
-  min-height: 150px;
-  border: 1px solid #252936;
-    border-radius: 15px;
-
-    box-sizing: border-box;
-}
 .textbox span{
     
         font-size: 17px;
     color: #b8b8c0;
 }
+.college-card{
+    padding: 30px 40px;
+}
+.school-card{
+    padding: 5px 40px;
+}
 .college-card , .school-card{
     width: 90%;
     max-width: 1100px;
-    margin: 30px auto;
-
-    padding: 30px 40px;
+    margin: 5px auto;
 
     display: flex;
     align-items: center;
@@ -313,14 +309,23 @@ border-color: transparent;
 .logo{
     display: flex;
     flex-shrink: 0;
+    width: 120px;
 }
-.school-logo{   
+.school-logo{
      display: flex;
     flex-shrink: 0;
+    width: 120px;
+    align-items: center;
+    justify-content: center;
 }
+
 .school-logo img{
-     width: 165px;
-    height: 165px;
+     width: 180px;
+     min-width: 180px;
+    height: 180px;
     object-fit: contain;
     display: block;
+}
+.school-content{
+
 }
