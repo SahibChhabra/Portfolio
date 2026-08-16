@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    padding: 0 7%;
+    padding: 0px 7%;
     box-sizing: border-box;
     background:
         radial-gradient(circle at 80% 35%,
@@ -33,7 +33,7 @@
     font-weight: 500;
     color: #A7B0C0;
     margin-bottom: 12px;
-    margin-top: 80px;
+    margin-top: 110px;
 }
 
 .card1 h1 {
