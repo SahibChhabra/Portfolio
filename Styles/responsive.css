@@ -1,0 +1,132 @@
+/* Hamburger button - hidden on desktop */
+.menu-btn {
+    display: none;
+}
+
+
+
+
+  @media (max-width: 768px) {
+
+    nav {
+        padding: 15px 20px;
+        position: relative;
+    }
+
+    /* Hide desktop links and resume */
+    nav ul,
+    .resume-button {
+        display: none;
+    }
+
+    /* Show hamburger */
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .logo {
+        font-size: 26px;
+        margin-top: 0;
+    }
+
+    /* Mobile menu */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        width: 100%;
+        padding: 25px 0;
+        gap: 20px;
+
+        background: #0b0d17;
+        border-radius: 0 0 10px 10px;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+
+        transition: opacity 0.3s ease,
+                    transform 0.3s ease,
+                    visibility 0.3s ease;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .Hero-section {
+        min-height: auto;
+        padding: 90px 20px 50px;
+    }
+
+    .card1 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .intro {
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .card1 h1 {
+        font-size: 42px;
+        margin-bottom: 12px;
+    }
+
+    .card1 h2 {
+        font-size: 32px;
+        margin-bottom: 18px;
+    }
+    .hero-line {
+        width: 130px;
+        height: 3px;
+        margin-bottom: 22px;
+    }
+
+    .card1 h3 {
+        font-size: 16px;
+        line-height: 1.6;
+        max-width: 350px;
+    }
+
+    .buttons {
+        padding: 15px 0;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .View-project,
+    .Contact-button {
+        margin-right: 0;
+        padding: 11px 18px;
+    }
+
+    .links {
+        padding: 25px 0;
+    }
+
+    .links-ul {
+        gap: 15px;
+    }
+
+    .links i {
+        font-size: 18px;
+    }
+}
+
+

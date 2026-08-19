@@ -3,16 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body {
     margin: 0;
-    background: #0B0D16;
+    background:
+        radial-gradient(circle at 80% 35%,
+            rgba(79, 124, 255, 0.12),
+            transparent 35%),
+        radial-gradient(circle at 20% 80%,
+            rgba(123, 97, 255, 0.08),
+            transparent 40%),
+        #0A0D14;
     color: #F8FAFC;
     ;
     font-family: "Lexend", sans-serif;
 }
 section {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 70px;
 }
 html {
     scroll-behavior: smooth;
