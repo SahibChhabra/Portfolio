@@ -3,23 +3,20 @@
     display: none;
 }
 
+@media (max-width: 768px) {
 
-
-
-  @media (max-width: 768px) {
+    /* ================= NAVBAR ================= */
 
     nav {
         padding: 15px 20px;
         position: relative;
     }
 
-    /* Hide desktop links and resume */
     nav ul,
     .resume-button {
         display: none;
     }
 
-    /* Show hamburger */
     .menu-btn {
         display: block;
         background: none;
@@ -34,7 +31,9 @@
         margin-top: 0;
     }
 
-    /* Mobile menu */
+
+    /* ================= MOBILE MENU ================= */
+
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -55,9 +54,10 @@
         visibility: hidden;
         transform: translateY(-10px);
 
-        transition: opacity 0.3s ease,
-                    transform 0.3s ease,
-                    visibility 0.3s ease;
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease,
+            visibility 0.3s ease;
     }
 
     .nav-links.active {
@@ -66,67 +66,248 @@
         transform: translateY(0);
     }
 
+
+    /* ================= HERO ================= */
+
     .Hero-section {
+        width: 100%;
         min-height: auto;
-        padding: 90px 20px 50px;
+        padding: 90px 16px 55px;
+        box-sizing: border-box;
     }
 
     .card1 {
         width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
+        text-align: center;
     }
+
+
+    /* Hello, I am */
 
     .intro {
-        font-size: 18px;
-        margin-top: 0;
-        margin-bottom: 10px;
+        font-size: 14px;
+        margin: 0 0 10px;
     }
+
+
+    /* Sahib Chhabra */
 
     .card1 h1 {
-        font-size: 42px;
-        margin-bottom: 12px;
+        font-size: 30px;
+        line-height: 1.15;
+        margin: 0 0 10px;
     }
+
+
+    /* Frontend Developer */
 
     .card1 h2 {
-        font-size: 32px;
-        margin-bottom: 18px;
+        font-size: 25px;
+        line-height: 1.25;
+        margin: 0 0 15px;
     }
+
+
+    /* Small line */
+
     .hero-line {
-        width: 130px;
-        height: 3px;
-        margin-bottom: 22px;
+        width: 90px;
+        height: 2px;
+        margin: 0 auto 22px;
     }
+
+
+    /* Description */
 
     .card1 h3 {
-        font-size: 16px;
-        line-height: 1.6;
-        max-width: 350px;
+        font-size: 13px;
+        line-height: 1.55;
+        max-width: 300px;
+        margin: 0 auto;
     }
 
+
+    /* ================= BUTTONS ================= */
+
     .buttons {
-        padding: 15px 0;
         display: flex;
         justify-content: center;
-        gap: 12px;
+        align-items: center;
+
+        gap: 8px;
+        padding: 24px 0 15px;
     }
 
     .View-project,
     .Contact-button {
-        margin-right: 0;
-        padding: 11px 18px;
+        margin: 0;
+        padding: 9px 13px;
+        font-size: 11px;
+        white-space: nowrap;
     }
 
+
+    /* ================= SOCIAL LINKS ================= */
+
     .links {
-        padding: 25px 0;
+        padding: 22px 0 8px;
     }
 
     .links-ul {
-        gap: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 0;
+        margin: 0;
     }
 
     .links i {
-        font-size: 18px;
+        font-size: 15px;
     }
+
+    .links a {
+        font-size: 12px;
+    }
+
+    .links span {
+        font-size: 14px;
+    }
+    /* ================= ABOUT SECTION ================= */
+
+.About-Page {
+    min-height: auto;
+    padding: 55px 16px 50px;
+    box-sizing: border-box;
 }
+
+.about-container {
+    width: 100%;
+}
+
+.about-container h2 {
+    font-size: 27px;
+    margin: 0;
+}
+
+.about-me-line {
+    width: 110px;
+    height: 3px;
+    margin-top: 8px;
+}
+
+
+/* ================= ABOUT TEXT ================= */
+
+.textbox p {
+    max-width: 100%;
+    margin: 35px auto 45px;
+
+    font-size: 14px;
+    line-height: 1.7;
+
+    text-align: center;
+}
+
+.textbox span {
+    font-size: 14px;
+}
+
+
+/* ================= EDUCATION ================= */
+
+.education-card {
+    padding: 0;
+    gap: 15px;
+}
+
+.heading-edu {
+    width: 100%;
+    font-size: 25px;
+    margin: 0;
+}
+
+.education-line {
+    width: 125px;
+    height: 3px;
+    margin: -8px 0 10px;
+}
+
+
+/* ================= COLLEGE / SCHOOL CARDS ================= */
+
+.college-card,
+.school-card {
+    width: 100%;
+    margin: 5px auto;
+
+    padding: 20px 16px;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    gap: 12px;
+
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+
+/* College logo */
+
+.logo {
+    width: 80px;
+    justify-content: center;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+}
+
+
+/* School logo */
+
+.school-logo {
+    width: 100px;
+    height: 100px;
+}
+
+.school-logo img {
+    width: 100px;
+    min-width: 100px;
+    height: 100px;
+}
+
+
+/* Card content */
+
+.college-content {
+    width: 100%;
+}
+
+.college-content h2 {
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.college-content h3 {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.course p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0 0 5px;
+}
+}
+
+
+ 
 
 
