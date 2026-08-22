@@ -6,8 +6,11 @@ form.addEventListener('submit' , (e)=>{
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const menuIcon = menuBtn.querySelector("i");
+const mobileMenu = document.querySelector(".mobile-menu");
+
 menuBtn.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    mobileMenu.classList.toggle("active");
 
     if (navLinks.classList.contains("active")) {
         menuIcon.classList.remove("fa-bars");

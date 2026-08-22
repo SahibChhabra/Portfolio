@@ -28,15 +28,28 @@ form{
     flex-direction: column;
 }
 .user-email , .user-message{
-    resize: none;
-    border: 1px solid #3c4051;
-    border-radius: 15px;
+       resize: none;
+
+    border: 1px solid #252936;
+    border-radius: 12px;
+
     font-family: inherit;
+
     box-sizing: border-box;
+
     color: white;
+
     padding: 10px;
+
     width: 500px;
-    background: transparent;
+
+    background: rgba(10, 14, 26, 0.55);
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
 }
 .user-email{
     height: 40px;
@@ -56,4 +69,29 @@ form button{
     color: white;
     border-radius: 10px;
     border: none;
+}
+.user-email:focus,
+.user-message:focus {
+    outline: none;
+
+    border-color: #4F7CFF;
+
+    box-shadow:
+        0 0 0 1px rgba(79, 124, 255, 0.25),
+        0 0 15px rgba(79, 124, 255, 0.15);
+}
+.contact-description a {
+    color: #4F7CFF;
+
+    text-decoration: none;
+
+    overflow-wrap: anywhere;
+}
+.contact-page form .submitbtn {
+     background:
+        linear-gradient(
+            135deg,
+            #4F7CFF,
+            #6366F1
+        );
 }
