@@ -5,7 +5,8 @@
 .mobile-resume-item{
     display: none;
 }
-@media (max-width: 768px) {
+/*mobile css */
+@media (max-width: 767px) {
 
     /* ================= NAVBAR ================= */
 
@@ -696,9 +697,9 @@ nav ul,
 }
 
 
-/* =========================================================
+/*
    FRONTEND / BACKEND / DATABASE / TOOLS GRIDS
-========================================================= */
+ */
 
 .frontend-skills,
 .backend-skills,

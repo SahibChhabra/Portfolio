@@ -1,0 +1,919 @@
+/*  Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+     /* NAVBAR */
+     
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 12px 0;
+
+        display: flex;
+        justify-content: center;
+
+         background: #0A0D14; 
+        z-index: 1000;
+    }
+   
+
+    .navbar nav {
+        position: relative;
+        width: 90%;
+        max-width: 1200px;
+        height: 64px;
+        padding: 5px 15px;
+        margin: 0 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background: #0b0d17;
+
+        
+        border-radius: 16px;
+
+        box-sizing: border-box;
+    }
+
+    /* LOGO */
+
+    .navbar .logo {
+        flex: 0 0 auto;
+
+        margin: 0 35px 0 0;
+
+        font-size: 26px;
+        line-height: 1;
+    }
+
+    /* NAVIGATION */
+
+    .navbar .nav-links {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        gap: 28px;
+
+        margin: 0;
+        padding: 0;
+
+        list-style: none;
+         transform: translateX(-41px);
+    }
+
+    .navbar .nav-links li {
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar .nav-links a {
+        font-size: 18px;
+        font-weight: 500;
+
+        white-space: nowrap;
+    }
+
+    /* Hide mobile resume */
+
+    .navbar .mobile-resume-item {
+        display: none;
+    }
+
+    /* RESUME */
+
+    .navbar .resume-button {
+        flex: 0 0 auto;
+        gap:4px;
+        width: 95px;
+        height: 40px;
+
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 13px;
+
+        border-radius: 10px;
+        white-space: nowrap;
+    }
+
+    /* HAMBURGER OFF */
+
+    .navbar .menu-btn {
+        display: none;
+    }
+
+     .Hero-section {
+        width: 100%;
+        min-height: auto;
+
+        padding: 140px 8% 70px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        box-sizing: border-box;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       HERO CONTENT
+    ========================= */
+
+    .card1 {
+        width: 100%;
+        max-width: 650px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       INTRO
+    ========================= */
+
+    .intro {
+        font-size: 20px;
+
+        margin: 0 0 10px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       NAME
+    ========================= */
+
+    .card1 h1 {
+        font-size: 52px;
+
+        line-height: 1.1;
+
+        margin: 0 0 10px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       TITLE
+    ========================= */
+
+    .card1 h2 {
+        font-size: 40px;
+
+        line-height: 1.15;
+
+        margin: 0 0 18px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       LINE
+    ========================= */
+
+    .hero-line {
+        width: 150px;
+        height: 4px;
+
+        margin: 0 0 25px;
+    }
+
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .card1 h3 {
+        font-size: 17px;
+
+        line-height: 1.6;
+
+        max-width: 500px;
+
+        margin: 0;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       BUTTONS
+    ========================= */
+
+    .buttons {
+        display: flex;
+
+        align-items: center;
+
+        gap: 15px;
+
+        padding: 30px 0 20px;
+    }
+
+
+    .View-project,
+    .Contact-button {
+        margin: 0;
+
+        padding: 12px 24px;
+
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       SOCIAL LINKS
+    ========================= */
+
+    .links {
+        padding: 25px 0 0;
+
+        display: block;
+    }
+
+
+    .links-ul {
+        display: flex;
+
+        justify-content: flex-start;
+        align-items: center;
+
+        gap: 20px;
+
+        padding: 0;
+        margin: 0;
+
+        list-style: none;
+    }
+
+
+    .links-ul a {
+        font-size: 14px;
+    }
+
+
+    .links i {
+        font-size: 17px;
+
+        margin-right: 5px;
+    }
+
+
+    .links span {
+        font-size: 14px;
+    }
+
+
+    /* =========================
+       ABOUT SECTION
+    ========================= */
+
+    .About-Page {
+        width: 100%;
+        min-height: auto;
+
+        padding: 60px 8% 70px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       ABOUT HEADING
+    ========================= */
+
+    .about-container {
+        width: 100%;
+        max-width: 1100px;
+
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .about-container h2 {
+        font-size: 30px;
+
+        margin: 0;
+
+        text-align: left;
+    }
+
+    .about-me-line {
+        width: 160px;
+        height: 4px;
+
+        margin: 10px 0 0;
+    }
+
+
+    /* =========================
+       ABOUT TEXT
+    ========================= */
+
+    .textbox {
+        width: 100%;
+    }
+
+    .textbox p {
+        max-width: 700px;
+
+        margin: 35px 0 55px;
+
+        font-size: 17px;
+        line-height: 1.75;
+
+        text-align: left;
+    }
+
+    .textbox span {
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       EDUCATION CONTAINER
+    ========================= */
+
+    .education-card {
+        width: 100%;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    /* =========================
+       EDUCATION HEADING
+    ========================= */
+
+    .heading-edu {
+        width: 100%;
+
+        max-width: 1100px;
+
+        margin: 0;
+
+        font-size: 28px;
+
+        text-align: left;
+    }
+
+    .education-line {
+        width: 175px;
+        height: 4px;
+
+        margin: -8px 0 12px;
+    }
+
+
+    /* =========================
+       COLLEGE / SCHOOL CARDS
+    ========================= */
+
+    .college-card,
+    .school-card {
+        width: 100%;
+
+        margin: 5px 0;
+
+        padding: 25px 30px;
+
+        display: flex;
+        flex-direction: row;
+
+        align-items: center;
+
+        gap: 25px;
+
+        border-radius: 14px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       COLLEGE LOGO
+    ========================= */
+
+    .college-card .logo {
+        width: 90px;
+        min-width: 90px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .college-card .logo img {
+        width: 90px;
+        height: 90px;
+
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       SCHOOL LOGO
+    ========================= */
+
+    .school-card .school-logo {
+        width: 90px;
+        min-width: 90px;
+        height: 90px;
+
+        margin: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .school-card .school-logo img {
+        width: 120px;
+        height: 120px;
+
+        object-fit: contain;
+    }
+
+
+    /* =========================
+       CARD CONTENT
+    ========================= */
+
+    .college-content {
+        width: 100%;
+
+        text-align: left;
+    }
+
+    .college-content h2 {
+        font-size: 21px;
+
+        line-height: 1.2;
+
+        margin: 0 0 8px;
+
+        text-align: left;
+    }
+
+    .college-content h3 {
+        font-size: 17px;
+
+        line-height: 1.45;
+
+        margin: 0 0 8px;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       COURSE / YEAR
+    ========================= */
+
+    .course {
+        text-align: left;
+    }
+
+    .course p {
+        font-size: 15px;
+
+        line-height: 1.45;
+
+        margin: 0 0 4px;
+
+        text-align: left;
+    }
+     /* =====================================================
+       SKILLS SECTION
+    ===================================================== */
+
+    .skills-page {
+        width: 100%;
+        min-height: auto;
+
+        padding: 60px 8% 70px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =====================================================
+       SKILLS HEADING
+    ===================================================== */
+
+    .skills-container {
+        width: 100%;
+
+        margin-top: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+    .skills-container h2 {
+        margin: 0;
+
+        font-size: 30px;
+
+        text-align: left;
+    }
+
+    .skills-line {
+        width: 130px;
+        height: 4px;
+
+        margin-top: 8px;
+    }
+
+
+    /* =====================================================
+       DESCRIPTION
+    ===================================================== */
+
+    .skills-textbox {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 30px 0 45px;
+
+        font-size: 17px;
+        line-height: 1.7;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       CATEGORY BOXES
+    ===================================================== */
+
+    .frontend-box,
+    .backend-box,
+    .database-box,
+    .tools-box {
+
+        width: 100%;
+        max-width: none;
+
+        margin: 10px 0;
+
+        padding: 20px 25px;
+
+        box-sizing: border-box;
+
+        border: 1px solid #252936;
+        border-radius: 15px;
+
+        color: #4F7CFF;
+    }
+
+
+    /* =====================================================
+       CATEGORY HEADINGS
+    ===================================================== */
+
+    .frontend-box > h2,
+    .backend-box > h2,
+    .database-box > h2,
+    .tools-box > h2 {
+
+        margin: 0 0 18px;
+
+        font-size: 20px;
+
+        text-align: left;
+
+        background: linear-gradient(
+            90deg,
+            #4F7CFF,
+            #8B5CF6
+        );
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+
+    /* =====================================================
+       FRONTEND
+    ===================================================== */
+
+    .frontend-skills {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(5, 1fr);
+
+        gap: 15px;
+
+        align-items: stretch;
+    }
+
+
+    /* =====================================================
+       BACKEND + DATABASE
+    ===================================================== */
+
+    .backend-database-row {
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+
+        gap: 15px;
+
+        margin: 10px 0;
+
+        box-sizing: border-box;
+    }
+
+
+    .backend-box,
+    .database-box {
+
+        width: 50%;
+
+        margin: 0;
+    }
+
+
+    .backend-skills,
+    .database-skills {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 12px;
+
+        align-items: stretch;
+    }
+
+
+    /* =====================================================
+       TOOLS
+    ===================================================== */
+
+    .tools-skills {
+
+        width: 100%;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 15px;
+
+        align-items: stretch;
+    }
+
+
+    /* =====================================================
+       SKILL CARDS
+    ===================================================== */
+
+    .skill-card,
+    .skills-card {
+
+        width: 100%;
+
+        min-height: 125px;
+
+        margin: 0 !important;
+
+        padding: 12px 8px;
+
+        box-sizing: border-box;
+
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        border-radius: 15px;
+    }
+
+
+    /* =====================================================
+       ICONS
+    ===================================================== */
+
+    .frontend-box img,
+    .backend-box img,
+    .database-box img,
+    .tools-box img {
+
+        width: 60px;
+
+        min-width: 0;
+
+        height: 60px;
+
+        object-fit: contain;
+
+        display: block;
+
+        margin: 0 !important;
+    }
+
+
+    /* =====================================================
+       SKILL NAME
+    ===================================================== */
+
+    .frontend-box h3,
+    .backend-box h3,
+    .database-box h3,
+    .tools-box h3 {
+
+        margin: 8px 0 0;
+
+        color: white;
+
+        font-size: 14px;
+
+        line-height: 1.2;
+
+        font-weight: 600;
+
+        text-align: center;
+    }
+
+
+    /* =====================================================
+       LEARNING LABEL
+    ===================================================== */
+
+    .frontend-box h4,
+    .backend-box h4,
+    .database-box h4,
+    .tools-box h4 {
+
+        margin: 4px 0 0;
+
+        font-size: 11px;
+
+        line-height: 1.2;
+
+        color: #a78bfa !important;
+
+        text-align: center;
+    }
+    
+    /* Contact page */
+    .contact-page {
+        width: 100%;
+
+        min-height: auto;
+
+        margin: 0;
+
+        padding: 50px 8% 60px;
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       HEADING
+    ========================= */
+
+    .connect-heading {
+        width: 100%;
+        max-width: 650px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .connect-heading h1 {
+        margin: 0 0 10px;
+
+        font-size: 30px;
+
+        line-height: 1.2;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .contact-description {
+        width: 100%;
+        max-width: 600px;
+
+        margin: 0 auto;
+
+        padding: 0;
+
+        font-size: 14px;
+        line-height: 1.6;
+
+        text-align: center;
+    }
+
+
+    /* =========================
+       FORM
+    ========================= */
+
+    .contact-page form {
+        width: 500px;
+        max-width: 100%;
+
+        margin: 25px auto 0;
+
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 10px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       INPUTS
+    ========================= */
+
+    .user-email,
+    .user-message {
+        width: 100%;
+        max-width: 500px;
+
+        box-sizing: border-box;
+    }
+
+
+    /* =========================
+       SUBMIT BUTTON
+    ========================= */
+
+    .contact-page form .submitbtn {
+        align-self: flex-start;
+
+        margin: 2px 0 0;
+
+        padding: 10px 24px;
+
+        font-size: 12px;
+    }
+}
+
+
