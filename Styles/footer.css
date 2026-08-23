@@ -1,0 +1,22 @@
+.footer {
+    width: 100%;
+    border-top: 1px solid #252a3a;
+    padding: 20px 20px 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.footer-content p,
+.footer-content span {
+    font-weight: 400;
+    font-family: inherit;
+}
+.footer-content p {
+    margin: 0 0 12px;
+    font-size: 18px;
+    color: #f5f5f5;
+}
+
+.footer-content span {
+    font-size: 16px;
+    color: #858ca3;
+}

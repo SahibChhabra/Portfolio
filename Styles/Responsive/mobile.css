@@ -1047,7 +1047,18 @@ nav ul,
             #6366F1
         );
 }
+  .footer {
+        padding: 30px 15px 25px;
+    }
 
+    .footer-content p {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .footer-content span {
+        font-size: 13px;
+    }
 }
 
  

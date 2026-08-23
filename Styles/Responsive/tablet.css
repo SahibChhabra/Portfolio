@@ -914,6 +914,17 @@
 
         font-size: 12px;
     }
+     .footer {
+        padding: 38px 20px 32px;
+    }
+
+    .footer-content p {
+        font-size: 17px;
+    }
+
+    .footer-content span {
+        font-size: 15px;
+    }
 }
 
 

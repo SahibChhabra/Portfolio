@@ -2,6 +2,7 @@ let form =  document.querySelector("form");
 form.addEventListener('submit' , (e)=>{
     showToast("Form submitted.")
     e.preventDefault();
+    form.reset();
 })
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
