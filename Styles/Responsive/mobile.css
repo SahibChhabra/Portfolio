@@ -1,1053 +1,681 @@
-/* Hamburger button - hidden on desktop */
 .menu-btn {
     display: none;
-}
-.mobile-resume-item{
-    display: none;
-}
-/*mobile css */
-@media (max-width: 767px) {
-
-    /* ================= NAVBAR ================= */
-
-nav {
-    padding: 15px 20px;
-    position: relative;
-}
-
-
-/* Hide desktop menu */
-
-nav ul,
-.resume-button {
-    display: none;
-}
-
-
-/* Hamburger */
-
-.menu-btn {
-    display: block;
-
-    background: none;
-    border: none;
-
-    color: white;
-
-    font-size: 22px;
-
-    cursor: pointer;
-
-    z-index: 1001;
-}
-
-
-/* Logo */
-
-.logo {
-    font-size: 26px;
-
-    margin-top: 0;
-    margin-left: 0px;
-}
-
-
-/* ================= MOBILE MENU ================= */
-
-.nav-links {
-    position: fixed;
-
-    top: 65px;
-    right: 15px;
-
-    width: 190px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    gap: 18px;
-
-    margin: 0;
-    padding: 20px 15px;
-
-    box-sizing: border-box;
-
-    background: #0b0d17;
-    border: 1px solid #202438;
-    border-radius: 10px;
-
-    list-style: none;
-
-    opacity: 0;
-    visibility: hidden;
-
-    transform: translateY(-8px);
-
-    transition:
-        opacity 0.25s ease,
-        transform 0.25s ease,
-        visibility 0.25s ease;
-
-    z-index: 999;
-}
-
-.nav-links.active {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-
-.nav-links li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-
-    font-size: 15px;
-    font-weight: 600;
-}
-
-
-.nav-links a:hover {
-    color: #6c63ff;
 }
 .mobile-resume-item {
-    display: block;
-    width: 100%;
-    margin-top: 2px;
-    padding-top: 12px;
-
-    border-top: 1px solid #202438;
-
-    list-style: none;
+    display: none;
 }
 
-.mobile-resume {
-    display: block;
-
-    width: 100%;
-    box-sizing: border-box;
-
-    padding: 10px 18px;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    color: white;
-
-    background: linear-gradient(135deg, #4F7CFF, #6366F1);
-
-    border-radius: 8px;
-
-    font-size: 14px;
-    font-weight: 600;
-}
-.mobile-resume {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-
-    padding: 10px 18px;
-
-    text-align: center;
-    text-decoration: none;
-
-    color: white;
-
-    background: linear-gradient(135deg, #4F7CFF, #6366F1);
-
-    border-radius: 8px;
-
-    font-size: 14px;
-    font-weight: 600;
-}
-
-  /* =========================
-   MOBILE HERO
-========================= */
-
-.Hero-section {
-    width: 100%;
-
-    /* Give the Hero more presence */
-    min-height: 500px;
-
-    padding: 90px 24px 55px;
-
-    box-sizing: border-box;
-
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-
-    text-align: left;
-}
-
-
-.card1 {
-    width: 100%;
-    max-width: 340px;
-
-    text-align: left;
-}
-
-
-/* =========================
-   INTRO
-========================= */
-
-.intro {
-    font-size: 14px;
-
-    margin: 0 0 7px;
-
-    text-align: left;
-}
-
-
-/* =========================
-   NAME
-========================= */
-
-.card1 h1 {
-    font-size: 32px;
-
-    line-height: 1.15;
-
-    margin: 0 0 6px;
-
-    text-align: left;
-}
-
-
-/* =========================
-   TITLE
-========================= */
-
-.card1 h2 {
-    font-size: 23px;
-
-    line-height: 1.2;
-
-    margin: 0 0 20px;
-
-    text-align: left;
-}
-
-
-/* =========================
-   LINE
-========================= */
-
-.hero-line {
-    width: 110px;
-    height: 3px;
-
-    margin: 0 0 27px;
-}
-
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.card1 h3 {
-    font-size: 14px;
-
-    line-height: 1.65;
-
-    max-width: 320px;
-
-    margin: 0;
-
-    text-align: left;
-}
-
-
-/* =========================
-   BUTTONS
-========================= */
-
-.buttons {
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 12px;
-
-    padding: 30px 0 20px;
-}
-
-
-.View-project,
-.Contact-button {
-    width: 185px;
-
-    margin: 0;
-
-    padding: 11px 16px;
-
-    font-size: 12px;
-
-    text-align: center;
-}
-
-
-/* =========================
-   SOCIAL LINKS
-========================= */
-
-.links {
-    padding: 20px 0 0;
-
-    display: block;
-}
-
-
-.links-ul {
-    display: flex;
-
-    justify-content: flex-start;
-    align-items: center;
-
-    gap: 14px;
-
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-}
-
-
-.links-ul a {
-    font-size: 12px;
-}
-
-
-.links i {
-    font-size: 14px;
-
-    margin-right: 4px;
-}
-
-
-.links span {
-    font-size: 12px;
-}
-
-
-    /* ================= ABOUT SECTION ================= */
-
-.About-Page {
-    width: 100%;
-    min-height: auto;
-
-    padding: 30px 24px 50px;
-
-    box-sizing: border-box;
-}
-
-
-/* ================= ABOUT HEADING ================= */
-
-.about-container {
-    width: 100%;
-    text-align: left !important;
-}
-
-.about-container h2 {
-    width: 100%;
-    font-size: 27px;
-    margin: 0;
-    text-align: left !important;
-}
-
-.about-me-line {
-    width: 148px;
-    display: block;
-    margin-left: 0 !important;
-    margin-right: auto !important;
-}
-
-
-/* ================= ABOUT TEXT ================= */
-
-.textbox {
-    width: 100%;
-}
-
-.textbox p {
-    max-width: 100%;
-
-    margin: 30px 0 45px;
-
-    font-size: 14px;
-    line-height: 1.7;
-
-    text-align: left;
-}
-
-.textbox span {
-    font-size: 14px;
-}
-
-
-/* ================= EDUCATION ================= */
-
-.education-card {
-    width: 100%;
-
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 15px;
-}
-
-
-/* Education heading */
-
-.heading-edu {
-    width: 100%;
-
-    font-size: 25px;
-
-    margin: 0;
-
-    text-align: left;
-}
-
-.education-line {
-    width: 155px;
-    height: 3px;
-
-    margin: -8px 0 12px;
-}
-
-
-/* ================= COLLEGE / SCHOOL CARDS ================= */
-
-.college-card,
-.school-card {
-    width: 100%;
-    margin: 5px 0;
-
-    padding: 20px 16px;
-
-    display: flex;
-    flex-direction: row;
-
-    align-items: flex-start;
-
-    text-align: left;
-
-    gap: 18px;
-
-    border-radius: 12px;
-    box-sizing: border-box;
-}
-
-
-/* ================= LOGOS ================= */
-
-.college-card .logo{
-    width: 55px;
-    min-width: 55px;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-.school-card .school-logo {
-    width: 55px;
-    min-width: 55px;
-    height: 55px;
-    margin-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
- 
-
-.college-card .logo img {
-    width: 55px;
-    height: 55px;
-
-    object-fit: contain;
-}
-
-.school-card .school-logo img {
-    width: 75px;
-    height: 75px;
-
-    object-fit: contain;
-}
-
-/* ================= CARD CONTENT ================= */
-
-.college-content {
-    width: 100%;
-
-    text-align: left;
-}
-
-.college-content h2 {
-    font-size: 18px;
-
-    line-height: 1.2;
-
-    margin: 0 0 7px;
-
-    text-align: left;
-}
-
-.college-content h3 {
-    font-size: 13px;
-
-    line-height: 1.45;
-
-    margin: 0 0 8px;
-
-    text-align: left;
-}
-
-.course {
-    text-align: left;
-}
-
-
-.course p {
-    font-size: 12px;
-
-    line-height: 1.45;
-
-    margin: 0 0 3px;
-
-    text-align: left;
-}
-
-
-/* =========================================================
-   MOBILE SKILLS SECTION
-========================================================= */
-
-.skills-page {
-    width: 100%;
-    max-width: 100%;
-    min-height: auto;
-
-    padding: 40px 24px 60px;
-
-    box-sizing: border-box;
-
-    background:
-        radial-gradient(
-            circle at 85% 20%,
-            rgba(79, 124, 255, 0.10),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 15% 75%,
-            rgba(139, 92, 246, 0.08),
-            transparent 40%
-        ),
-        #0A0D14;
-}
-
-
-/* =========================================================
-   SKILLS HEADING
-========================================================= */
-
-.skills-container {
-    width: 100%;
-
-    margin-top: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-
-    text-align: left;
-}
-
-.skills-container h2 {
-    margin: 0;
-
-    font-size: 27px;
-
-    background: linear-gradient(
-        90deg,
-        #4F7CFF,
-        #8B5CF6
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.skills-line {
-    width: 120px;
-    height: 3px;
-
-    margin-top: 8px;
-
-    background: linear-gradient(
-        90deg,
-        #4F7CFF,
-        #8B5CF6
-    );
-
-    border-radius: 10px;
-}
-
-
-/* =========================================================
-   DESCRIPTION
-========================================================= */
-
-.skills-textbox {
-    width: 100%;
-    max-width: none;
-
-    margin: 28px 0 35px;
-
-    font-size: 14px;
-    line-height: 1.7;
-
-    color: #b8b8c0;
-
-    text-align: left;
-}
-
-
-/* =========================================================
-   CATEGORY BOXES
-========================================================= */
-
-.frontend-box,
-.backend-box,
-.database-box,
-.tools-box {
-
-    width: 100%;
-    max-width: none;
-
-    margin: 12px 0;
-
-    padding: 18px 14px 16px;
-
-    box-sizing: border-box;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(15, 20, 34, 0.95),
-            rgba(9, 13, 24, 0.98)
+/* Mobile CSS */
+@media (max-width: 767px) {
+
+    /* Navbar */
+    nav {
+        padding: 15px 20px;
+        position: relative;
+    }
+    
+    nav ul,
+    .resume-button {
+        display: none;
+    }
+
+    /* Hamburger */
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    /* Logo */
+    .logo {
+        font-size: 26px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    /* Mobile menu */
+    .nav-links {
+        position: fixed;
+        top: 65px;
+        right: 15px;
+        width: 190px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        margin: 0;
+        padding: 20px 15px;
+        box-sizing: border-box;
+        background: #0b0d17;
+        border: 1px solid #202438;
+        border-radius: 10px;
+        list-style: none;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition:
+            opacity 0.25s ease,
+            transform 0.25s ease,
+            visibility 0.25s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .nav-links li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .nav-links a:hover {
+        color: #6c63ff;
+    }
+
+    .mobile-resume-item {
+        display: block;
+        width: 100%;
+        margin-top: 2px;
+        padding-top: 12px;
+        border-top: 1px solid #202438;
+        list-style: none;
+    }
+
+    .mobile-resume {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 18px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background: linear-gradient(135deg, #4F7CFF, #6366F1);
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* Hero section */
+    .Hero-section {
+        width: 100%;
+        min-height: 500px;
+        padding: 90px 24px 55px;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .card1 {
+        width: 100%;
+        max-width: 340px;
+        text-align: left;
+    }
+
+    /* Intro */
+    .intro {
+        font-size: 14px;
+        margin: 0 0 7px;
+        text-align: left;
+    }
+
+    /* Name */
+    .card1 h1 {
+        font-size: 32px;
+        line-height: 1.15;
+        margin: 0 0 6px;
+        text-align: left;
+    }
+
+    /* Title */
+    .card1 h2 {
+        font-size: 23px;
+        line-height: 1.2;
+        margin: 0 0 20px;
+        text-align: left;
+    }
+
+    /* Line */
+    .hero-line {
+        width: 110px;
+        height: 3px;
+        margin: 0 0 27px;
+    }
+
+    /* Description */
+    .card1 h3 {
+        font-size: 14px;
+        line-height: 1.65;
+        max-width: 320px;
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Buttons */
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 30px 0 20px;
+    }
+
+    .View-project,
+    .Contact-button {
+        width: 185px;
+        margin: 0;
+        padding: 11px 16px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Social links */
+    .links {
+        padding: 20px 0 0;
+        display: block;
+    }
+
+    .links-ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 14px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .links-ul a {
+        font-size: 12px;
+    }
+
+    .links i {
+        font-size: 14px;
+        margin-right: 4px;
+    }
+
+    .links span {
+        font-size: 12px;
+    }
+
+    /* About section */
+    .About-Page {
+        width: 100%;
+        min-height: auto;
+        padding: 30px 24px 50px;
+        box-sizing: border-box;
+    }
+
+    .about-container {
+        width: 100%;
+        text-align: left !important;
+    }
+
+    .about-container h2 {
+        width: 100%;
+        font-size: 27px;
+        margin: 0;
+        text-align: left !important;
+    }
+
+    .about-me-line {
+        width: 148px;
+        display: block;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    /* About text */
+    .textbox {
+        width: 100%;
+    }
+
+    .textbox p {
+        max-width: 100%;
+        margin: 30px 0 45px;
+        font-size: 14px;
+        line-height: 1.7;
+        text-align: left;
+    }
+
+    .textbox span {
+        font-size: 14px;
+    }
+
+    /* Education */
+    .education-card {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .heading-edu {
+        width: 100%;
+        font-size: 25px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .education-line {
+        width: 155px;
+        height: 3px;
+        margin: -8px 0 12px;
+    }
+
+    /* College and school cards */
+    .college-card,
+    .school-card {
+        width: 100%;
+        margin: 5px 0;
+        padding: 20px 16px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        gap: 18px;
+        border-radius: 12px;
+        box-sizing: border-box;
+    }
+
+    /* Education logos */
+    .college-card .logo {
+        width: 55px;
+        min-width: 55px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .school-card .school-logo {
+        width: 55px;
+        min-width: 55px;
+        height: 55px;
+        margin-top: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .college-card .logo img {
+        width: 55px;
+        height: 55px;
+        object-fit: contain;
+    }
+
+    .school-card .school-logo img {
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+    }
+
+    /* Education content */
+    .college-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .college-content h2 {
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0 0 7px;
+        text-align: left;
+    }
+
+    .college-content h3 {
+        font-size: 13px;
+        line-height: 1.45;
+        margin: 0 0 8px;
+        text-align: left;
+    }
+
+    .course {
+        text-align: left;
+    }
+
+    .course p {
+        font-size: 12px;
+        line-height: 1.45;
+        margin: 0 0 3px;
+        text-align: left;
+    }
+
+    /* Skills section */
+    .skills-page {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        padding: 40px 24px 60px;
+        box-sizing: border-box;
+        background:
+            radial-gradient(
+                circle at 85% 20%,
+                rgba(79, 124, 255, 0.10),
+                transparent 35%
+            ),
+            radial-gradient(
+                circle at 15% 75%,
+                rgba(139, 92, 246, 0.08),
+                transparent 40%
+            ),
+            #0A0D14;
+    }
+
+    .skills-container {
+        width: 100%;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .skills-container h2 {
+        margin: 0;
+        font-size: 27px;
+        background: linear-gradient(
+            90deg,
+            #4F7CFF,
+            #8B5CF6
         );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
-    border: 1px solid rgba(79, 124, 255, 0.18);
-
-    border-radius: 14px;
-
-    box-shadow:
-        0 10px 25px rgba(0, 0, 0, 0.25);
-
-    color: #4F7CFF;
-}
-
-
-/* =========================================================
-   CATEGORY HEADINGS
-========================================================= */
-
-.frontend-box > h2,
-.backend-box > h2,
-.database-box > h2,
-.tools-box > h2 {
-
-    margin: 0 0 15px;
-
-    font-size: 17px;
-
-    letter-spacing: 0.3px;
-
-    text-align: left;
-
-    background: linear-gradient(
-        90deg,
-        #4F7CFF,
-        #8B5CF6
-    );
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-
-/*
-   FRONTEND / BACKEND / DATABASE / TOOLS GRIDS
- */
-
-.frontend-skills,
-.backend-skills,
-.database-skills,
-.tools-skills {
-
-    width: 100%;
-
-    display: grid;
-
-    grid-template-columns: repeat(3, 1fr);
-
-    gap: 9px;
-
-    align-items: stretch;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   BACKEND + DATABASE CONTAINER
-========================================================= */
-
-.backend-database-row {
-
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 0;
-
-    margin: 0;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================================================
-   INDIVIDUAL SKILL TILE
-========================================================= */
-
-.skill-card,
-.skills-card {
-
-    width: 100%;
-    min-height: 100px;
-
-    margin: 0 !important;
-
-    padding: 10px 5px;
-
-    box-sizing: border-box;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            145deg,
-            rgba(18, 24, 39, 0.95),
-            rgba(10, 14, 26, 0.95)
+    .skills-line {
+        width: 120px;
+        height: 3px;
+        margin-top: 8px;
+        background: linear-gradient(
+            90deg,
+            #4F7CFF,
+            #8B5CF6
         );
-
-    border: 1px solid rgba(91, 100, 180, 0.25);
-
-    border-radius: 12px;
-
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-
-/* =========================================================
-   SKILL ICONS
-========================================================= */
-
-.frontend-box img,
-.backend-box img,
-.database-box img,
-.tools-box img {
-
-    width: 48px;
-
-    min-width: 0;
-
-    height: 48px;
-
-    object-fit: contain;
-
-    display: block;
-
-    margin: 0 !important;
-}
-
-
-/* =========================================================
-   SKILL NAME
-========================================================= */
-
-.frontend-box h3,
-.backend-box h3,
-.database-box h3,
-.tools-box h3 {
-
-    margin: 7px 0 0;
-
-    color: white;
-
-    font-size: 11px;
-
-    line-height: 1.2;
-
-    font-weight: 600;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   LEARNING LABEL
-========================================================= */
-
-.frontend-box h4,
-.backend-box h4,
-.database-box h4,
-.tools-box h4 {
-
-    margin: 3px 0 0;
-
-    font-size: 9px;
-
-    line-height: 1.2;
-
-    color: #a78bfa !important;
-
-    text-align: center;
-}
-
-
-/* =========================================================
-   SUBTLE INTERACTION
-========================================================= */
-
-.skill-card:active,
-.skills-card:active {
-
-    transform: translateY(-2px);
-
-    border-color: rgba(79, 124, 255, 0.55);
-
-    box-shadow:
-        0 0 15px rgba(79, 124, 255, 0.12);
-}
-
-
-/* =========================
-   CONTACT SECTION
-========================= */
-
-.contact-page {
-    width: 100%;
-    max-width: 100%;
-
-    min-height: auto;
-
-    margin: 0;
-
-    padding: 40px 20px 50px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-}
-
-
-/* =========================
-   HEADING
-========================= */
-
-.connect-heading {
-    width: 100%;
-
-    display: block;
-
-    text-align: center;
-
-    margin: 0;
-    padding: 0;
-}
-
-.connect-heading h1 {
-    width: 100%;
-
-    margin: 0 0 12px;
-    padding: 0;
-
-    font-size: 27px;
-    line-height: 1.2;
-
-    text-align: center;
-}
-
-.connect-heading h1 span {
-    color: #4F7CFF;
-}
-
-
-/* =========================
-   DESCRIPTION
-========================= */
-
-.contact-description {
-    width: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    font-size: 13px;
-    line-height: 1.6;
-
-    color: #b8b8c0;
-
-    text-align: left;
-}
-
-.contact-description a {
-    color: #4F7CFF;
-
-    text-decoration: none;
-
-    overflow-wrap: anywhere;
-}
-
-
-/* =========================
-   FORM
-========================= */
-
-.contact-page form {
-    width: 100%;
-    max-width: 100%;
-
-    margin: 25px 0 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    align-items: stretch;
-
-    gap: 10px;
-
-    box-sizing: border-box;
-}
-
-
-/* =========================
-   INPUTS
-========================= */
-
-.user-email,
-.user-message {
-    width: 100%;
-    max-width: 100%;
-
-    margin: 0;
-    padding: 11px 12px;
-
-    box-sizing: border-box;
-
-    resize: none;
-
-    color: white;
-
-    font-family: inherit;
-
-    background: rgba(10, 14, 26, 0.7);
-
-    border: 1px solid #252936;
-    border-radius: 10px;
-
-    outline: none;
-}
-
-.user-email {
-    height: 42px;
-}
-
-.user-message {
-    height: 115px !important;
-}
-
-.user-email::placeholder,
-.user-message::placeholder {
-    color: #777b8c;
-    font-size: 11px;
-}
-
-
-/* =========================
-   FOCUS
-========================= */
-
-.user-email:focus,
-.user-message:focus {
-    border-color: rgba(79, 124, 255, 0.65);
-
-    box-shadow:
-        0 0 12px rgba(79, 124, 255, 0.10);
-}
-
-
-/* =========================
-   SUBMIT
-========================= */
-
-.contact-page form .submitbtn {
-    width: fit-content;
-
-    margin: 2px 0 0;
-
-    padding: 10px 24px;
-
-    font-size: 12px;
-
-    border: none;
-    border-radius: 8px;
-
-    color: white;
-
-    background:
-        linear-gradient(
+        border-radius: 10px;
+    }
+
+    /* Skills description */
+    .skills-textbox {
+        width: 100%;
+        max-width: none;
+        margin: 28px 0 35px;
+        font-size: 14px;
+        line-height: 1.7;
+        color: #b8b8c0;
+        text-align: left;
+    }
+
+    /* Skill category boxes */
+    .frontend-box,
+    .backend-box,
+    .database-box,
+    .tools-box {
+        width: 100%;
+        max-width: none;
+        margin: 12px 0;
+        padding: 18px 14px 16px;
+        box-sizing: border-box;
+        background:
+            linear-gradient(
+                145deg,
+                rgba(15, 20, 34, 0.95),
+                rgba(9, 13, 24, 0.98)
+            );
+        border: 1px solid rgba(79, 124, 255, 0.18);
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+        color: #4F7CFF;
+    }
+
+    .frontend-box > h2,
+    .backend-box > h2,
+    .database-box > h2,
+    .tools-box > h2 {
+        margin: 0 0 15px;
+        font-size: 17px;
+        letter-spacing: 0.3px;
+        text-align: left;
+        background: linear-gradient(
+            90deg,
+            #4F7CFF,
+            #8B5CF6
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Skill grids */
+    .frontend-skills,
+    .backend-skills,
+    .database-skills,
+    .tools-skills {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9px;
+        align-items: stretch;
+        box-sizing: border-box;
+    }
+
+    /* Backend and database */
+    .backend-database-row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    /* Skill cards */
+    .skill-card,
+    .skills-card {
+        width: 100%;
+        min-height: 100px;
+        margin: 0 !important;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background:
+            linear-gradient(
+                145deg,
+                rgba(18, 24, 39, 0.95),
+                rgba(10, 14, 26, 0.95)
+            );
+        border: 1px solid rgba(91, 100, 180, 0.25);
+        border-radius: 12px;
+        transition:
+            transform 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+    }
+
+    /* Skill icons */
+    .frontend-box img,
+    .backend-box img,
+    .database-box img,
+    .tools-box img {
+        width: 48px;
+        min-width: 0;
+        height: 48px;
+        object-fit: contain;
+        display: block;
+        margin: 0 !important;
+    }
+
+    /* Skill names */
+    .frontend-box h3,
+    .backend-box h3,
+    .database-box h3,
+    .tools-box h3 {
+        margin: 7px 0 0;
+        color: white;
+        font-size: 11px;
+        line-height: 1.2;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    /* Learning label */
+    .frontend-box h4,
+    .backend-box h4,
+    .database-box h4,
+    .tools-box h4 {
+        margin: 3px 0 0;
+        font-size: 9px;
+        line-height: 1.2;
+        color: #a78bfa !important;
+        text-align: center;
+    }
+
+    /* Skill card interaction */
+    .skill-card:active,
+    .skills-card:active {
+        transform: translateY(-2px);
+        border-color: rgba(79, 124, 255, 0.55);
+        box-shadow: 0 0 15px rgba(79, 124, 255, 0.12);
+    }
+
+    /* Contact section */
+    .contact-page {
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 40px 20px 50px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .connect-heading {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .connect-heading h1 {
+        width: 100%;
+        margin: 0 0 12px;
+        padding: 0;
+        font-size: 27px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .connect-heading h1 span {
+        color: #4F7CFF;
+    }
+
+    /* Contact description */
+    .contact-description {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        line-height: 1.6;
+        color: #b8b8c0;
+        text-align: left;
+    }
+
+    .contact-description a {
+        color: #4F7CFF;
+        text-decoration: none;
+        overflow-wrap: anywhere;
+    }
+
+    /* Contact form */
+    .contact-page form {
+        width: 100%;
+        max-width: 100%;
+        margin: 25px 0 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Inputs */
+    .user-email,
+    .user-message {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 11px 12px;
+        box-sizing: border-box;
+        resize: none;
+        color: white;
+        font-family: inherit;
+        background: rgba(10, 14, 26, 0.7);
+        border: 1px solid #252936;
+        border-radius: 10px;
+        outline: none;
+    }
+
+    .user-email {
+        height: 42px;
+    }
+
+    .user-message {
+        height: 115px !important;
+    }
+
+    .user-email::placeholder,
+    .user-message::placeholder {
+        color: #777b8c;
+        font-size: 11px;
+    }
+
+    /* Input focus */
+    .user-email:focus,
+    .user-message:focus {
+        border-color: rgba(79, 124, 255, 0.65);
+        box-shadow: 0 0 12px rgba(79, 124, 255, 0.10);
+    }
+
+    /* Submit button */
+    .contact-page form .submitbtn {
+        width: fit-content;
+        margin: 2px 0 0;
+        padding: 10px 24px;
+        font-size: 12px;
+        border: none;
+        border-radius: 8px;
+        color: white;
+        background: linear-gradient(
             135deg,
             #4F7CFF,
             #6366F1
         );
-}
-  .footer {
+    }
+
+    /* Footer */
+    .footer {
         padding: 30px 15px 25px;
     }
 
