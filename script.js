@@ -1,9 +1,39 @@
-let form =  document.querySelector("form");
-form.addEventListener('submit' , (e)=>{
-    showToast("Form submitted.")
+const form = document.querySelector('form');
+const submitBtn = form.querySelector('.submitbtn');
+
+form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    form.reset();
-})
+
+    const formData = new FormData(form);
+    formData.append("access_key", "8253ca9e-47f2-4e32-8055-323c3bf741db");
+
+    const originalText = submitBtn.textContent;
+
+    submitBtn.textContent = "Sending...";
+    submitBtn.disabled = true;
+
+    try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            showToast("Success! Your message has been sent.");
+            form.reset();
+        } else {
+            showToast("Error: " + data.message);
+        }
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    } finally {
+        submitBtn.textContent = originalText;
+        submitBtn.disabled = false;
+    }
+});
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 const menuIcon = menuBtn.querySelector("i");
