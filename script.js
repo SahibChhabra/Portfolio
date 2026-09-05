@@ -71,14 +71,7 @@ function showToast(message) {
         toast.classList.remove("show");
     }, 2500);
 }
-let projectbtn = document.querySelector('.projectbtn');
-projectbtn.addEventListener("click" , ()=>{
-    showToast('No projects available yet.')
-})
-let viewproject = document.querySelector(".View-project");
-viewproject.addEventListener('click' , ()=>{
-    showToast('No projects available yet.')
-})
+
 let resumebtn = document.querySelector(".resume-button");
 resumebtn.addEventListener('click' , ()=>{
      showToast("Resume will be updated soon.")
@@ -91,3 +84,4 @@ let contactbtn =  document.querySelector(".Contact-button");
 contactbtn.addEventListener('click', ()=>{
     location.href='mailto:sahibchhabrawork@gmail.com' ,  '_blank';
 })
+
